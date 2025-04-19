@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Gilbert Betrando Simarmata</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .floating-icon {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    .video-bg video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-bg">
+    <video autoplay muted loop>
+      <source src="background Portofolio gilbert.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6">
+    <h1 class="text-2xl font-bold">Gilbert Betrando Simarmata</h1>
+    <ul class="flex gap-6">
+      <li><a href="#about" class="hover:underline">Tentang</a></li>
+      <li><a href="#projects" class="hover:underline">Projek</a></li>
+      <li><a href="#contact" class="hover:underline">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Halo, saya Gilbert</h2>
+    <p class="text-lg md:text-xl max-w-xl" data-aos="fade-up" data-aos-delay="200">
+        Saya adalah seorang kreator di bidang multimedia, teknologi, dan produksi event. Dengan keahlian lintas bidang, saya menggabungkan visual, audio, interaksi, dan desain untuk menciptakan pengalaman yang dinamis dan berdampak..
+    </p>
+    <div class="flex gap-4 mt-6">
+      <a href="https://instagram.com/glbrt.smrt" class="text-pink-500 text-2xl floating-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/083100217608" class="text-green-400 text-2xl floating-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://facebook.com/Gilbert Smrt" class="text-blue-400 text-2xl floating-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://t.me/glsmrtid" class="text-blue-300 text-2xl floating-icon" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-10 md:p-20 bg-gray-900 glass rounded-xl mx-6 my-10" data-aos="fade-right">
+    <h3 class="text-3xl font-semibold mb-4">Tentang Saya</h3>
+    <p>
+        Dengan latar belakang di bidang desain visual, produksi media, dan teknologi multimedia, saya telah terlibat dalam berbagai proyek mulai dari broadcasting hingga event interaktif. Portofolio ini menampilkan karya-karya pilihan yang merepresentasikan proses, kreativitas, dan pengalaman saya.
+    </p>
+  </section>
+
+  <!-- Parallax Section -->
+  <section class="parallax h-72 flex items-center justify-center text-3xl font-bold text-white bg-fixed" style="background-image: url('https://source.unsplash.com/1600x900/?creative,event');">
+    <div class="bg-black bg-opacity-40 p-6 rounded-xl">Kreativitas Tanpa Batas</div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-10 md:p-20">
+    <h3 class="text-3xl font-semibold mb-10 text-center" data-aos="zoom-in">Projek Pilihan</h3>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-gray-800 p-6 rounded-lg glass" data-aos="fade-up">
+        <img src="https://via.placeholder.com/600x300" alt="Project 1" class="mb-4 rounded-lg">
+        <h4 class="text-xl font-bold mb-2">Projek Event Multimedia</h4>
+        <p>Produksi visual untuk konser, seminar, dan acara gereja menggunakan After Effects & Resolume.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg glass" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://via.placeholder.com/600x300" alt="Project 2" class="mb-4 rounded-lg">
+        <h4 class="text-xl font-bold mb-2">Desain Branding</h4>
+        <p>Logo, identitas visual, dan materi promosi yang kreatif dan konsisten untuk berbagai klien.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="p-10 md:p-20 bg-gray-800 glass rounded-xl mx-6 my-10" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold mb-6 text-center">Galeri</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery 1" class="rounded-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery 2" class="rounded-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery 3" class="rounded-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery 4" class="rounded-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery 5" class="rounded-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery 6" class="rounded-lg">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-10 md:p-20 bg-gray-900 glass rounded-xl mx-6 my-10 text-center" data-aos="fade-left">
+    <h3 class="text-3xl font-semibold mb-4">Hubungi Saya</h3>
+    <p>Email: <a href="mailto:gilbert@example.com" class="underline">gilbert@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/gilbert" class="underline" target="_blank">@gilbert</a></p>
+    <form class="mt-6 space-y-4 max-w-lg mx-auto">
+      <input type="text" placeholder="Nama" class="w-full p-3 rounded bg-gray-800 text-white">
+      <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-800 text-white">
+      <textarea rows="4" placeholder="Pesan" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+      <button type="submit" class="bg-blue-600 px-6 py-2 rounded hover:bg-blue-700 transition">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-400 p-6">
+    © 2025 Gilbert Betrando Simarmata. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+</body>
+</html>
